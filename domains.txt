@@ -1,0 +1,3 @@
+#AdminURL,user,password
+#192.168.1.112:7011,weblogic,weblogic
+#localhost:7001,weblogic,welcome1
