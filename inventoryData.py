@@ -105,6 +105,7 @@ def getBasicInformation():
             conn =  dsResource.getJDBCDriverParams().getUrl()
             test = dsResource.getJDBCDriverParams().getProperties()
             test1 = dsResource.getJDBCConnectionPoolParams()
+            targets = jdbcResource.getTargets()
             user = ''
             readTimeOut = ''
             conTimeOut = ''
@@ -114,7 +115,7 @@ def getBasicInformation():
             timeStamping = Date()
             timeToShow = DateFormat.getDateTimeInstance(DateFormat.SHORT,DateFormat.SHORT).format(timeStamping);
 
-            infoLineForDBDetails = str(dsname) + "|" + str(dsResource) + "|" + str(dsJNDIname) + "|" + str(dsParams) + "|" + str(dsDriver) + "|" + str(conn) + "|" + str(test1) + "\n"
+            infoLineForDBDetails = str(dsname) + "|" + str(dsResource) + "|" + str(dsJNDIname) + "|" + str(dsParams) + "|" + str(dsDriver) + "|" + str(conn) + "|" + str(test1) + "|" + str(targets) +  "\n"
             print(infoLineForDBDetails)
             dbs = open (dir+"/" + dataSourcersDomainInv,"a")
             dbs.write(infoLineForDBDetails)
