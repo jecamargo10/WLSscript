@@ -33,7 +33,7 @@ def getProperties():
     pathConnectionProblems = cfg.get("Files", "pathConnectionProblems")
     appsDomainInv = cfg.get("Files","appsDomainInv")
     scriptHome = cfg.get("Runtime","scriptHome")
-    dataSourcersDomainInv = cfg.get("Files","dataSourcersDomainInv")
+    dataSourcersDomainInv = "dataSources.txt"
 
 def getBasicInformation():
     print 'starting the script for ', adminServerAddress, '....'
