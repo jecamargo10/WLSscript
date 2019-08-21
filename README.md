@@ -1,10 +1,10 @@
 # WLSscript
 Script for getting the Data about the Inventory and the Datasources of a WLS Domain
-### How to run this Script
+## Preconditions
 * As precondition is required to have an instalation of a Web Logic Server
 * Also is required to have access to the domains that are going to be analyzed
 * The path in wich the script is run, should have execution permision
-
+## How to run this Script
 1. Edit the file general.properties
   - pathDomainsWLS: File path containing domain information. E.g. C: \ test \ domains.txt. This file must be edited later.
   - pathInventoryWLS: File path where the result of the revision to a domain will be placed. E.g. C: \ test \ InventoryWLS.txt.
