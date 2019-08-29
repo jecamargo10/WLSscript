@@ -22,7 +22,7 @@ Script for getting the Inventory of Applications, Resources and Monitor a WLS Do
 2. Edit the File domains.txt, this file has the data of the AdminServer of each domain that is going to be monitored (it allows multiple servers)
 It has the following structure AdminURL,user,password
 3. Run the file setWLSEnv.cmd in the WebLogic installation
-4. Open the path in wich the script is located
+4. Open the path in which the script is located
 5. Run the following command:
 `java -classpath /PATH_TO_WLS/weblogic.jar -Dweblogic.security.SSL.ignoreHostnameVerification=true -Dweblogic.security.TrustKeyStore=DemoTrust weblogic.WLST   /PATH_TO_SCRIPT/inventoryData.py `
 
